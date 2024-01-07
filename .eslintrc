@@ -1,0 +1,29 @@
+{
+  "root": true,
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+    "sourceType": "module"
+  },
+  "extends": [
+    "plugin:vue/vue3-strongly-recommended",
+    "eslint:recommended",
+    "@vue/typescript/recommended",
+    "prettier"
+  ],
+  "plugins": ["@typescript-eslint", "prettier"],
+  "rules": {
+    "prettier/prettier": "error"
+  },
+  "overrides": [
+    {
+      "files": ["**/?(*.)+(spec|test|cy).ts?"],
+      "extends": ["plugin:testing-library/vue", "plugin:jest-dom/recommended"]
+    },
+    {
+      "files": ["cypress/**/*.ts"],
+      "plugins": ["cypress"],
+      "extends": ["plugin:cypress/recommended"]
+    }
+  ]
+}
