@@ -1,0 +1,4 @@
+{
+  "*.{js,vue,ts}": ["prettier --write", "eslint", "npm run test run"],
+  "*.json": ["prettier --write"]
+}
