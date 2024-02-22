@@ -17,6 +17,8 @@
     "vue": "^3.3.11"
   },
   "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
     "@testing-library/cypress": "^10.0.1",
     "@testing-library/jest-dom": "^6.2.0",
     "@testing-library/vue": "^8.0.1",
